@@ -1,4 +1,4 @@
-# ConstrainedLeastSquares
+# ConstrainedLeastSquares.jl
 
 This package implements a general least squares method described in the paper *Evaluation of Measurements by the Method of Least Squares* by 
 Lars Nielsen (2001).
