@@ -134,7 +134,7 @@ function covariance!(input, :x_1, :x_2, 0.1)
 sets the covariance of the first and second element in
 the array parameter `x`.
 """
-function covariance!(input::LSQInput, x::Symbol, y::Symbol, value::Float64)
+function set_covariance!(input::LSQInput, x::Symbol, y::Symbol, value::Float64)
     i = input.zindex[x]
     j = input.zindex[y]
     

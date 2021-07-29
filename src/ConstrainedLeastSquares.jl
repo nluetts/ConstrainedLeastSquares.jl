@@ -3,7 +3,7 @@ module ConstrainedLeastSquares
 using Espresso:      subs
 using LinearAlgebra: Diagonal
 using NamedArrays:   NamedArray
-using PrettyTables:  PrettyTables
+using PrettyTables:  pretty_table
 using Zygote:        jacobian
 
 include("input.jl")
@@ -18,11 +18,11 @@ export
     @withinput,
     correlation_β,
     covariance_β,
-    covariance!,
     names_z,
     names_β,
     print_corr_β,
     print_cov_β,
+    set_covariance!,
     solve,
     uncertainty_β
 

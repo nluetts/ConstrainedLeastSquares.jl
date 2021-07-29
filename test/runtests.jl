@@ -36,10 +36,10 @@ end
     β = [(:A, 1.5)] # not needed here
     inp = LSQInput(β, z)
     
-    @test_throws ArgumentError covariance!(inp, :a, :b, 10.0)
-    covariance!(inp, :a, :c, 10.0)
+    @test_throws ArgumentError set_covariance!(inp, :a, :b, 10.0)
+    set_covariance!(inp, :a, :c, 10.0)
     @test inp.Σ[1, 4] == inp.Σ[4, 1] == 10.0
-    covariance!(inp, :b_1, :b_2, 20.0)
+    set_covariance!(inp, :b_1, :b_2, 20.0)
     @test inp.Σ[2, 3] == inp.Σ[3, 2] == 20.0
 end
 
