@@ -77,7 +77,7 @@ end
 end
 
 @testset "regression test with example from Lars Nielsen 2001" begin
-    # see Lars Nielsen, 2001 - Evaluation of Measurements by the Method of Least Squares
+    # see Lars Nielsen, 2001: Evaluation of Measurements by the Method of Least Squares
     # measured parameters
     z = [
         (:ms, 199.988816, 0.000010), # known sum of weights in g
